@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Hex</title>
+   </head>
+  
+  <body>
+  
+   
+      <div >
+        <img src="download.jpg" id="color">
+        <!-- <p class="color"></p> -->
+        <button id="btn">click me</button>
+      </div>
+   
+    <!-- javascript -->
+    <script>
+     
+        const colors = ["download.jpg","download(1).jpg"];
+        const btn = document.getElementById("btn");
+        const color = document.querySelector(".color");
+
+        btn.addEventListener("click", function () {
+        const randomNumber = getRandomNumber();
+  // console.log(randomNumber);
+
+        img.src = colors[randomNumber];
+       
+});
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * colors.length);
+}
+
+    </script>
+  </body>
+</html>
